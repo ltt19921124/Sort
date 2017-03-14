@@ -1,4 +1,16 @@
 class selectSort{
-    
+    public static void selectSort(int[] arr){
+		for (int x = 1;x < arr.length;x++){
+			int temp = arr[x];
+			int j = x - 1;
+			for (;j >=0 && temp < arr[j];j--){
+				arr[j+1] = arr[j];
+			}
+			arr[j+1] = temp;
+		}
+		for(int x = 0;x < arr.length;x++){
+			System.out.println(arr[x]);
+		}
+	}
 
 }
