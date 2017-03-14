@@ -1,0 +1,19 @@
+class bubbleSort{
+   int[] arr = {1,5,89,7};
+   for (int x = 0;x < arr.length;x++){
+      for(int y=0;y < arr.length-x-1;y++){
+          if (arr[y+1] < arr[y]){
+              int temp = arr[y];
+              arr[y] = arr[y+1];
+              arr[y+1] = temp;
+          }
+      }
+   }
+   System.out.print("[");
+   for(int x = 0;x < arr.length;x++){
+      if(x != arr.length - 1)
+          System.out.print(arr[x] + ",");
+      else
+          System.out.print(arr[x] + "]");    
+   }
+}
