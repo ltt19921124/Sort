@@ -1,4 +1,4 @@
-class selectSort{
+class insertSort{
     public static void selectSort(int[] arr){
 		for (int x = 1;x < arr.length;x++){
 			int temp = arr[x];
